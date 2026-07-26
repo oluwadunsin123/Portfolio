@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    gap:3rem;
+    padding:90px 10%;
+    background:#081b29;
+    color:#fff;
+}
+
+.contact-text h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.contact-text h2 span{
+    color:#0ef;
+}
+
+.contact-text h4{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.contact-text p{
+    color:#ccc;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.contact-list{
+    margin-bottom:30px;
+}
+
+.contact-list li{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+    color:#fff;
+    font-size:17px;
+}
+
+.contact-icon{
+    color:#0ef;
+    font-size:18px;
+}
+
+.contact-icons{
+    display:flex;
+    gap:15px;
+}
+
+.contact-icons a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #0ef;
+    border-radius:50%;
+    color:#0ef;
+    text-decoration:none;
+    font-size:20px;
+    transition:.4s ease;
+}
+
+.contact-icons a:hover{
+    background:#0ef;
+    color:#081b29;
+    box-shadow:0 0 20px #0ef;
+    transform:translateY(-5px);
+}
+
+/* ---------- FORM ---------- */
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    /* background-color: white; */
+}
+
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px;
+    background:#1b2d3a;
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    box-shadow:0 0 15px #0ef;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:220px;
+}
+
+.send{
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    background:#0ef;
+    color:#081b29;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s ease;
+    box-shadow:0 0 20px #0ef;
+}
+
+.send:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 35px #0ef;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:900px){
+
+.contact{
+    grid-template-columns:1fr;
+}
+
+.contact-text{
+    text-align:center;
+}
+
+.contact-list li{
+    justify-content:center;
+}
+
+.contact-icons{
+    justify-content:center;
+}
+
+}

@@ -1,0 +1,176 @@
+/*================ PROJECTS =================*/
+
+.projects{
+    padding:100px 9% 70px;
+    background:#081b29;
+}
+
+.project-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.project-title h5{
+    color:#00abf0;
+    font-size:20px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.project-title h2{
+    color:#fff;
+    font-size:45px;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.project-box{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(0,171,240,.15);
+}
+
+.project-box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    transition:.6s ease;
+}
+
+.project-box:hover img{
+    transform:scale(1.1);
+}
+
+.project-layer{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,171,240,.95)
+    );
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 30px;
+    color:#fff;
+
+    transform:translateY(100%);
+    transition:.5s ease;
+}
+
+.project-box:hover .project-layer{
+    transform:translateY(0);
+}
+
+.project-layer h4{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.project-layer p{
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.project-icons{
+    display:flex;
+    gap:18px;
+}
+
+.project-icons a{
+    width:50px;
+    height:50px;
+    background:#fff;
+    color:#081b29;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:22px;
+    transition:.4s;
+}
+
+.project-icons a:hover{
+    background:#081b29;
+    color:#00abf0;
+    transform:translateY(-5px);
+}
+
+.project-box{
+    animation:fadeUp 1s ease;
+}
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:991px){
+
+.project-title h2{
+    font-size:38px;
+}
+
+.project-container{
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+
+}
+
+@media(max-width:768px){
+
+.projects{
+    padding:80px 7%;
+}
+
+.project-box img{
+    height:220px;
+}
+
+.project-layer h4{
+    font-size:24px;
+}
+
+}
+
+@media(max-width:480px){
+
+.projects{
+    padding:70px 5%;
+}
+
+.project-title h2{
+    font-size:32px;
+}
+
+.project-layer{
+    padding:20px;
+}
+
+.project-layer h4{
+    font-size:20px;
+}
+
+.project-layer p{
+    font-size:14px;
+}
+
+.project-icons a{
+    width:45px;
+    height:45px;
+    font-size:18px;
+}
+
+}

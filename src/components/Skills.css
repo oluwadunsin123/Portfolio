@@ -1,0 +1,248 @@
+.skills{
+    background:#081b29;
+    color:#fff;
+    padding:80px 10%;
+}
+
+.heading{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:70px;
+}
+
+.heading span{
+    color:#0ef;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:60px;
+    align-items:flex-start;
+}
+
+.technical-skills h3,
+.professional-skills h3{
+    text-align:center;
+    font-size:24px;
+    margin-bottom:35px;
+    text-decoration:underline;
+    text-underline-offset:8px;
+}
+
+/* ---------- TECHNICAL SKILLS ---------- */
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill p{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:16px;
+}
+
+.bar{
+    width:100%;
+    height:8px;
+    background:#1b2d3a;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.bar span{
+    display:block;
+    height:100%;
+    background:#0ef;
+    border-radius:20px;
+    box-shadow:0 0 10px #0ef;
+    animation:grow 2s ease forwards;
+}
+
+.html{
+    width:95%;
+}
+
+.css{
+    width:90%;
+}
+
+.javascript{
+    width:85%;
+}
+
+.react{
+    width:80%;
+}
+
+.node{
+    width:75%;
+}
+
+.express{
+    width:75%;
+}
+
+.mongo{
+    width:70%;
+}
+
+.git{
+    width:80%;
+}
+
+@keyframes grow{
+
+    from{
+        width:0;
+    }
+
+}
+
+/* ---------- PROFESSIONAL SKILLS ---------- */
+
+/* ---------- PROFESSIONAL SKILLS ---------- */
+
+.professional-skills h3{
+    text-align:center;
+    color:#fff;
+    font-size:24px;
+    margin-bottom:35px;
+    text-decoration:underline;
+    text-underline-offset:8px;
+}
+
+.professional-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    justify-items:center;
+}
+
+.radial{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:5px solid #0ef;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#fff;
+    box-shadow:0 0 12px #0ef;
+    transition:all .4s ease;
+}
+
+.circle:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px #0ef,
+               0 0 45px #0ef;
+}
+
+.radial p{
+    color:#fff;
+    margin-top:12px;
+    font-size:15px;
+    text-align:center;
+}
+/* Individual Percentages */
+
+.path-1{
+    stroke-dashoffset:50;
+}
+
+.path-2{
+    stroke-dashoffset:75;
+}
+
+.path-3{
+    stroke-dashoffset:100;
+}
+
+.path-4{
+    stroke-dashoffset:50;
+}
+
+@keyframes animate-path{
+
+    from{
+        stroke-dashoffset:502;
+    }
+
+}
+
+.percentage{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:22px;
+    font-weight:bold;
+    animation:fadeIn .8s ease forwards;
+}
+
+.text{
+    position:absolute;
+    bottom:-15px;
+    width:100%;
+    text-align:center;
+    font-size:17px;
+    animation:fadeIn .8s ease forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+.skills-container{
+
+    grid-template-columns:1fr;
+    gap:70px;
+
+}
+
+.professional-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.professional-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.heading{
+
+    font-size:40px;
+
+}
+
+}
