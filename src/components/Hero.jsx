@@ -8,12 +8,12 @@ function Hero() {
   return (
     <div className="hero" id="home">
       <div className="hero-text">
-        <h3>Hello, <br />It's Me</h3>
+        <h3>Hello, <br /> <span>It's Me</span></h3>
 
-        <h1>Oluwadunsin</h1>
+        <h1>Oluwa <span>dunsin</span></h1>
 
         <h2>
-          And I'm a <span>Frontend Developer</span>
+          And I'm a <span>Full-Stack Developer</span>
         </h2>
 
         <p>

@@ -111,6 +111,10 @@ function Contact() {
             required
           ></textarea>
 
+          <p className="form-note">
+            I'll get back to you within 24 hours.
+          </p>
+
           <button type="submit" className="send">
             Submit
           </button>

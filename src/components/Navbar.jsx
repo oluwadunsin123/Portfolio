@@ -5,7 +5,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="logo">Portfolio</div>
+      <div className="logo">Dunsin <span>.</span></div>
 
       <ul className="nav-links">
         <li><a href="#home">Home</a></li>

@@ -15,9 +15,9 @@ function Projects() {
 
       <div className="project-title">
 
-        <h5>My Work</h5>
+        <h5>Portfolio</h5>
 
-        <h2>Latest Project</h2>
+        <h2>Latest <span>Project</span></h2>
 
       </div>
 

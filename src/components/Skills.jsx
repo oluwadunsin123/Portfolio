@@ -55,7 +55,7 @@ function Skills() {
           </div>
           <div className="skill">
             <p>Tailwind CSS<span>90%</span></p>
-            <div className="bar"><span className="git"></span></div>
+            <div className="bar"><span className="tailwin"></span></div>
           </div>
         </div>
 

@@ -16,7 +16,7 @@ function About() {
                     About <span>Me</span>
                 </h2>
 
-                <h3>Frontend Developer</h3>
+                <h3>Full-Stack Developer</h3>
 
                 <p>
                     I am a passionate Full-Stack Developer who enjoys transforming

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "./Services.css";
-import { FaCode, FaPaintBrush, FaApple } from "react-icons/fa";
+import { FaCode, FaPaintBrush } from "react-icons/fa";
 
 function Services() {
     return (
@@ -16,7 +16,7 @@ function Services() {
                     <FaCode className="icon" />
                     <h3>Frontend Development</h3>
                     <p>
-                        I Build responsive, interactive and <br />visually appealing websites using <br />HTML, CSS, JavaScript and React <br />with a focus on creating smooth user experience.
+                        I Build responsive, interactive and visually appealing websites using HTML, CSS, JavaScript and React with a focus on creating smooth user experience.
                     </p>
 
                     {/* <button>Read More</button> */}
@@ -26,8 +26,8 @@ function Services() {
                     <FaCode className="icon" />
                     <h3>Backend Development</h3>
                     <p>
-                        I develop secure and scalable <br />server-side applications using <br />Node.js,
-                        Express.js and MongoDB, <br />creating efficient APIs and handling <br />data
+                        I develop secure and scalable server-side applications using Node.js,
+                        Express.js and MongoDB, creating efficient APIs and handling data
                         management.
                     </p>
 
@@ -35,13 +35,13 @@ function Services() {
                 </div>
 
                 <div className="service-box">
-                    <FaApple className="icon" />
+                    <FaPaintBrush className="icon" />
 
                     <h3>UI/UX & Graphic Design</h3>
 
                     <p>
-                        I design clean user interfaces, <br />branding materials, flyers <br />and social
-                        media graphics that combine <br />creativity with functionality.
+                        I design clean user interfaces, branding materials, flyers and social
+                        media graphics that combine creativity with functionality.
                     </p>
 
                     {/* <button>Read More</button> */}

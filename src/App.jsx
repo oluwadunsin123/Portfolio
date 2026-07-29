@@ -7,8 +7,38 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-const App = () => {
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
+
+function App(){
+
+useEffect(()=>{
+
+ScrollReveal().reveal(
+
+'.hero,.about,.services,.skills,.projects,.testimonials,.contact',
+
+{
+
+distance:"60px",
+
+duration:1800,
+
+delay:200,
+
+origin:"bottom",
+
+reset:false
+
+}
+
+);
+
+},[]);
+
+
   return (
     <>
      <Navbar/>
@@ -19,6 +49,7 @@ const App = () => {
      <Projects/>
      <Testimonials/>
      <Contact/>
+     <Footer/>
     </>
    
   )
