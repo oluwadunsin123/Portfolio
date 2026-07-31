@@ -119,7 +119,7 @@ function Projects() {
             <div className="project-icons">
 
               <a
-                href="https://restaurant-site-flame-pi.vercel.app/"
+                href="https://kbk-cake-site.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
