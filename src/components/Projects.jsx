@@ -5,13 +5,14 @@ import "./Projects.css";
 import Sign from "../assets/image/Sign.png"
 import KBK from "../assets/image/KBK.png";
 import Restaurant from "../assets/image/Restaurant.png";
+import KBK2 from "../assets/image/KBK2.png";
 
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 
 function Projects() {
   return (
-    <section className="projects" id="projects">
+    <div className="projects" id="projects">
 
       <div className="project-title">
 
@@ -31,7 +32,7 @@ function Projects() {
 
           <div className="project-layer">
 
-            <h4>Signin Portfolio</h4>
+            <h4>Signin project</h4>
 
             <p>
               A responsive Signin website built 
@@ -42,6 +43,44 @@ function Projects() {
 
               <a
                 href="https://signin-theta-mauve.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FiExternalLink />
+              </a>
+
+              <a
+                href="https://github.com/oluwadunsin123"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+        {/* Project four */}
+
+        <div className="project-box">
+
+          <img src={KBK2} alt="cake site" />
+
+          <div className="project-layer">
+
+            <h4>KBK new site</h4>
+
+            <p>
+              A responsive cake website built 
+               showcasing my skills and designs.
+            </p>
+
+            <div className="project-icons">
+
+              <a
+                href="https://kbk-cake-site.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -119,7 +158,7 @@ function Projects() {
             <div className="project-icons">
 
               <a
-                href="https://kbk-cake-site.vercel.app/"
+                href="https://dunsin-restaurant-site.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -142,7 +181,7 @@ function Projects() {
 
       </div>
 
-    </section>
+    </div>
   );
 }
 
